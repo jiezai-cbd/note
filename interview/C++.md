@@ -10,6 +10,7 @@
     * 5）[指针和引用的区别](https://www.nowcoder.com/ta/nine-chapter/review?page=11)？（代表意义、内存占用、初始化、指向是否可改、能否为空）
     * 引用是别名，不占用内存，不能为空，指向不能改。
     * 6）[C/C++中的强制转换](https://github.com/arkingc/note/blob/master/C++/EffectiveC++.md#%E6%9D%A1%E6%AC%BE27%E5%B0%BD%E9%87%8F%E5%B0%91%E5%81%9A%E8%BD%AC%E5%9E%8B%E5%8A%A8%E4%BD%9C)
+    * static_cast reinterpret_cast(字节层面重新解释，并没有转换存数格式) const_cast(去const和volatile) dynamic_cast(rtti)
     * 7）[如何修改const变量、const与volatile](https://blog.csdn.net/heyabo/article/details/8745942)
     * 8）静态类型获取与动态类型获取（[typeid](https://github.com/arkingc/llc/blob/master/cpp/RTTI/typeid.cpp#L4)、dynamic_cast:转换目标类型必须是引用类型）
     * 9）[如何比较浮点数大小？](https://blog.csdn.net/jk110333/article/details/8902707)（[直接使用==比较出现错误的例子](https://stackoverflow.com/questions/26261466/in-current-c-and-java-double-type-and-float-type-if-x-0-0-is-correct)）
