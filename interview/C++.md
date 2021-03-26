@@ -14,14 +14,22 @@
     * 7）[如何修改const变量、const与volatile](https://blog.csdn.net/heyabo/article/details/8745942)
     * volatile：每次都从变量的地址重新取出数据，防止编译器优化。
     * 8）静态类型获取与动态类型获取（[typeid](https://github.com/arkingc/llc/blob/master/cpp/RTTI/typeid.cpp#L4)、dynamic_cast:转换目标类型必须是引用类型）
+    * 声明的即为静态类型，编译器便确定，若指针或引用为基类且含有虚方法，则typeid（关键字类似sizeof） 获取具体对象类型，返回type_info可比较。
     * 9）[如何比较浮点数大小？](https://blog.csdn.net/jk110333/article/details/8902707)（[直接使用==比较出现错误的例子](https://stackoverflow.com/questions/26261466/in-current-c-and-java-double-type-and-float-type-if-x-0-0-is-correct)）
+    * 确定精度，相减。
 * **二.函数**
     * 1）重载（[参数必须不同(const修饰形参)](https://github.com/arkingc/llc/blob/master/cpp/overload/main.cpp#L9)、重载与作用域、继承中的重载\(using\)、重载与const成员函数） 
+    * 重载：函数不同参数，const也算。（重载声明要放在一个作用域中，否则会出现覆盖）
+    * 重定义：基类非virtual方法，子类写同名方法覆盖基类方法。
+    * 重写：基类virtual方法，子类也实现一份同名方法。动态绑定，多态。
 * **三.类**
     * 1）面向对象的三大特性（封装、继承、多态）
     * 2）[struct和class的区别？](https://blog.csdn.net/qq_37964547/article/details/81835488)
+    * 默认继承级别，默认成员级别
     * 3）[访问权限说明符](temp/C++.md/#3访问控制说明符)？（目的是加强类的封装性）
     * 4）类的静态成员（所属？静态成员函数不能声明成const、类类型的成员、定义时不能重复使用static、具有类内初始值的静态成员定义时不可再设初值）
+    * static变量类内声明，外部定义，因为类的声明只是表明这个类的模板，要在new的时候具体构造，而static需要在运行前就存在。
+    * const因为static函数只能访问static变量，用const也没意义，本身就访问不到对象成员。
     * 5）构造函数相关
         - 有哪些构造函数（默认、委托、拷贝、移动）
         - 合成的默认拷贝构造函数（默认行为？什么情况下不会合成？怎么解决？如果成员包含类内初始值，合成默认构造函数会使用该成员的类内初始值初始化该成员）
