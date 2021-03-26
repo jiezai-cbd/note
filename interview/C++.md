@@ -6,7 +6,9 @@
     * 3）两个文件中声明两个同名变量？（使用了与未使用extern？）
     * 未使用--》重定义，使用了extren正确。一个变量在多个文件只能定义一次，因此，一个头文件extren int a;进行申明，同名cpp进行定义，同时其他要用的cpp#include 该头文件。 
     * 4）全局数组和局部数组的初始化？
+    * 全局数组在全局数据区（DATA段运行前就有空间，且空间大），局部在栈（运行时分配，栈小，大数组会stackoverflow）
     * 5）[指针和引用的区别](https://www.nowcoder.com/ta/nine-chapter/review?page=11)？（代表意义、内存占用、初始化、指向是否可改、能否为空）
+    * 引用是别名，不占用内存，不能为空，指向不能改。
     * 6）[C/C++中的强制转换](https://github.com/arkingc/note/blob/master/C++/EffectiveC++.md#%E6%9D%A1%E6%AC%BE27%E5%B0%BD%E9%87%8F%E5%B0%91%E5%81%9A%E8%BD%AC%E5%9E%8B%E5%8A%A8%E4%BD%9C)
     * 7）[如何修改const变量、const与volatile](https://blog.csdn.net/heyabo/article/details/8745942)
     * 8）静态类型获取与动态类型获取（[typeid](https://github.com/arkingc/llc/blob/master/cpp/RTTI/typeid.cpp#L4)、dynamic_cast:转换目标类型必须是引用类型）
