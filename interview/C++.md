@@ -51,6 +51,7 @@
         - 不可重载的操作符有哪些？（?:，::）
     * 8）析构函数相关
         - 销毁过程的理解（delete会执行哪些操作？[逆序析构成员](https://github.com/arkingc/llc/blob/master/cpp/class/constructorANDdestructor/order.cpp#L1)）
+        - 先调用析构函数，在调用operator delete释放内存空间
         - 为什么析构函数中不能抛出异常？（不能是指“不应该”，C++本身并不禁止[《Effective C++:条款8》](https://github.com/arkingc/note/blob/master/C++/EffectiveC++.md#%E6%9D%A1%E6%AC%BE08%E5%88%AB%E8%AE%A9%E5%BC%82%E5%B8%B8%E9%80%83%E7%A6%BB%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0)）
         - 如果析构函数中包含可能抛出异常的代码怎么办？（Effective C++:条款8》）
         - 可否通过对象或对象的引用(指针或引用)调用
