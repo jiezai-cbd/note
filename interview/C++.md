@@ -57,6 +57,13 @@
         - 如果析构函数中包含可能抛出异常的代码怎么办？（Effective C++:条款8》）
         - try catch 并且abort 不要throw
         - 可否通过对象或对象的引用(指针或引用)调用
+        - 不能，会有安全隐患
+        - 1。显式调用的时候，析构函数相当于的一个普通的成员函数
+        - 2。编译器隐式调用析构函数，如分配了对内存，显式调用析构的话引起重复释放堆内存的异常
+        - 3。把一个对象看作占用了部分栈内存，占用了部分堆内存（如果申请了的话），这样便于理解这个问题
+        - 系统隐式调用析构函数的时候，会加入释放栈内存的动作（而堆内存则由用户手工的释放）
+        - 用户显式调用析构函数的时候，只是单纯执行析构函数内的语句，释放堆内存，不会释放栈内存，摧毁对象，此时对象还存在但残缺了。
+
         - 为什么将继承体系中基类的析构函数声明为虚函数？（[《Effective C++:条款7》](https://github.com/arkingc/note/blob/master/C++/EffectiveC++.md#%E6%9D%A1%E6%AC%BE07%E4%B8%BA%E5%A4%9A%E6%80%81%E5%9F%BA%E7%B1%BB%E5%A3%B0%E6%98%8Evirtual%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0)）
         - 不应该将非继承体系中的类的虚函数声明为虚函数（[《Effective C++:条款7》](https://github.com/arkingc/note/blob/master/C++/EffectiveC++.md#%E6%9D%A1%E6%AC%BE07%E4%B8%BA%E5%A4%9A%E6%80%81%E5%9F%BA%E7%B1%BB%E5%A3%B0%E6%98%8Evirtual%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0)）
         - 不应该继承析构函数非虚的类（[《Effective C++:条款7》](https://github.com/arkingc/note/blob/master/C++/EffectiveC++.md#%E6%9D%A1%E6%AC%BE07%E4%B8%BA%E5%A4%9A%E6%80%81%E5%9F%BA%E7%B1%BB%E5%A3%B0%E6%98%8Evirtual%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0)，final防止继承）
