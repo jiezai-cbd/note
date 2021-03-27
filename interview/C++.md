@@ -134,6 +134,7 @@
             + [第二级分配器](https://github.com/arkingc/note/blob/master/C++/STL%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90.md#3%E7%AC%AC%E4%BA%8C%E7%BA%A7%E5%88%86%E9%85%8D%E5%99%A8__default_alloc_template)（为什么要二级分配器？内存池与16个free-list？空间分配和释放的步骤？）
     * 16）[traits与迭代器相应类型](https://github.com/arkingc/note/blob/master/C++/STL%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90.md#2traits%E7%BC%96%E7%A8%8B%E6%8A%80%E6%B3%95)
 * **六.对象内存模型**
+   [链接](https://www.cnblogs.com/QG-whz/p/4909359.html)
     * **数据成员**
         - [成员变量在类对象中的布局规则](https://github.com/arkingc/note/blob/master/C++/C++%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B.md#32-data-member%E7%9A%84%E5%B8%83%E5%B1%80)
         - [通过指针和通过'.'进行Data Member存取的区别](https://github.com/arkingc/note/blob/master/C++/C++%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B.md#33-data-member%E7%9A%84%E5%AD%98%E5%8F%96)
