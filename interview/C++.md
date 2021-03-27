@@ -108,7 +108,7 @@
         * [weak_ptr(特点、用途：可以解决shared_ptr的循环引用问题)](https://www.cnblogs.com/DswCnblog/p/5628314.html)
         * [手写实现智能指针](https://cloud.tencent.com/developer/article/1155156)
     * 14）[实现memcpy](../数据结构与算法/算法题总结.md#1实现memcpy)
-    * 15）memcpy与memmove的区别（前者不处理重叠，后者处理重叠）
+    * 15）[memcpy与memmove的区别（前者不处理重叠，后者处理重叠）](https://blog.csdn.net/Li_Ning_/article/details/51418400)
     * 16）[能否使用memcpy比较两个结构体对象？](https://blog.csdn.net/peng314899581/article/details/60766892)
     * 17）实现[strlen](../数据结构与算法/算法题总结.md#1实现strlen)、[strcmp](../数据结构与算法/算法题总结.md#2实现strcmp)、[strcat](../数据结构与算法/算法题总结.md#3实现strcat)、[strcpy](../数据结构与算法/算法题总结.md#4实现strcpy)
 * **五.STL**
