@@ -106,7 +106,7 @@
         * shared_ptr（使用、计数的变化，get()函数要注意什么）
         * unique_ptr(如何转移控制权)
         * [weak_ptr(特点、用途：可以解决shared_ptr的循环引用问题)](https://www.cnblogs.com/DswCnblog/p/5628314.html)
-        * 手写实现智能指针
+        * [手写实现智能指针](https://cloud.tencent.com/developer/article/1155156)
     * 14）[实现memcpy](../数据结构与算法/算法题总结.md#1实现memcpy)
     * 15）memcpy与memmove的区别（前者不处理重叠，后者处理重叠）
     * 16）[能否使用memcpy比较两个结构体对象？](https://blog.csdn.net/peng314899581/article/details/60766892)
