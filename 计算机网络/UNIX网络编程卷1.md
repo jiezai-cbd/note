@@ -1,4 +1,6 @@
-
+[1](https://www.zhihu.com/question/31499851/answer/698711664)
+[2](https://www.zhihu.com/question/23614342)
+[3](https://www.zhihu.com/question/37271342?sort=created)
 |基本套接字编程|高级套接字编程|附录|
 |:--:|:--:|:--:|
 |[一.套接字编程简介](#ch1)<br>[二.基本TCP套接字编程](#ch2)<br>[三.基本UDP套接字编程](#ch3)<br>[四.I/O复用](#ch4)<br>[五.套接字选项](#ch5)<br>[六.名字与数值转换](#ch6)|[七.高级I/O函数](#ch7)<br>[八.Unix域协议](#ch8)<br>[九.非阻塞式I/O](#ch9)<br>[十.线程](#ch10)<br>[十一.客户/服务器程序设计范式](#ch11)|[TCP回射服务器程序](#fl1)<br>[UDP回射服务器程序](#fl2)<br>[类型与头文件映射表](#fl3)<br>[函数与头文件映射表](#fl4)|
